@@ -5,7 +5,9 @@ public with sharing class CandidateModalController {
         return [SELECT Id, LastName FROM User WHERE Id = :UserInfo.getUserId() LIMIT 1];
     }
     //GIT
+
      //commit
+    //Adrian waz hier
     @AuraEnabled(cacheable=true)
     public static List<Candidate__c> getCandidates() {
         return [
